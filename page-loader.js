@@ -1,3 +1,6 @@
+// Anti Email scraper
+const mail = "d2VpaXN3dXJzdGRldkBnbWFpbC5jb20="
+
 function loadpage(pageName) {
     $(".content").html(pages[pageName].html);
     $(".content").attr("id",pageName)
@@ -239,7 +242,7 @@ const pages = {
             <div class="col-12 col-md-4 mt-5">
                 <h4>Kontakt</h4><br/>
                 <b>Empfohlen: </b>Kontakt über Discord: Weiiswurst#0016 oder auf meinem Discord Server<br/>
-                <span class="text-muted">Kontakt über E-Mail: weiiswurstdev@gmail.com</span>
+                <span class="text-muted">Kontakt über E-Mail: ${atob(mail)}/span>
             </div>
         </div>
     </div></div>`,
