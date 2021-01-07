@@ -305,7 +305,7 @@ const pages = {
                     <form class="form-inline">
                       <label class="sr-only" for="dateiName">Name</label>
                       <div class="input-group mb-2 mr-sm-2">
-                        <input type="text" class="form-control mb-2 mr-sm-2" id="dateiName" placeholder="paper-1.16.4-420">
+                        <input type="text" class="form-control" id="dateiName" placeholder="paper-1.16.4-420">
                         <div class="input-group-append">
                           <div class="input-group-text">.jar</div>
                         </div>
@@ -347,7 +347,7 @@ const pages = {
 
 const saveTextAsFile = async (fileName,fileContents) => {
   if(!("showSaveFilePicker" in window)) {
-    alert("Dein Browser unterstützt das Schreiben von Dateien nicht! Du musst sie jetzt als download speichern.")
+    console.log("Dein Browser unterstützt das Schreiben von Dateien nicht! Du musst sie jetzt als download speichern.")
     saveBlobAsFile(fileName,fileContents)
     return;
   }
