@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weiiswurst's Website</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="page-loader.js"></script>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="Description" content="Ich stelle hier meine neuesten Tutorials und Programme vor.">
+        <meta name="Keywords" content="Weiiswurst YouTube Programmieren Lernen Spigot NodeJS DiscordJS">
+    </head>
+    <body>
+        <div class="container-fluid" id="site">
+            <header class="d-block d-lg-none w-100">
+                <nav class="navbar navbar-dark bg-dark w-100 m-0">
+                    <a class="navbar-brand ml-2" href="#">Weiiswurst.dev</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item" >
+                                <a class="nav-link" href="#startseite" onclick="loadpage('startseite')">Startseite</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projekte" onclick="loadpage('projekte')">Projekte</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tutorials" onclick="loadpage('tutorials')">Tutorials</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="row row-main">
+                <div class="flex-column col-lg-2 position-relative d-none d-lg-block" id="sidebar">
+                    <div class="ml-3">
+                        <div class="mb-5 mt-2">
+                            <img src="images/default.png" width="100%" height="auto">
+                        </div>
+                        <nav class="nav flex-column">
+                            <a class="nav-link active" href="#startseite" onclick="loadpage('startseite')">
+                                <div class="btn btn-dark btn-lg btn-block" >Startseite</div>
+                            </a>
+                            <a class="nav-link active" href="#projekte" onclick="loadpage('projekte')">
+                                <div class="btn btn-dark btn-lg btn-block" >Projekte</div>
+                            </a>
+                            <a class="nav-link active" href="#projekte" onclick="loadpage('tutorials')">
+                              <div class="btn btn-dark btn-lg btn-block" >Tutorials</div>
+                            </a>
+                        </nav>
+                        <div class="row mx-3 mt-5" role="group">
+                            <a class="col mt-1 social-media-button" href="https://www.youtube.com/channel/UCWl2KOlxM2KYth4BLclkHSA?sub_confirmation=1"><div class="btn btn-secondary w-100">YouTube</div></a>
+                            <a class="col mt-1 social-media-button" href="https://discord.gg/YDkQbE7"><div class="btn btn-secondary w-100">Discord</div></a>
+                        </div>
+                        <div class="position-absolute text-white" style="bottom: 10px">
+                            &copy;Weiiswurst
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-column col-lg-10 col-12 content">
+                    <div class="container text-white">
+                        <h1>Weiiswurst.dev</h1>
+                        <h3 class="mt-5">
+                            Hier findest du alles zu mir: Meine Projekte, meine Tutorials und die Ressourcen zu den Tutorials sowie eine Kontaktmöglichkeit.
+                        </h3>
+                        <h2 style="color:red;" class="bg-dark">
+                            <b>Diese Seite funktioniert ohne JavaScript nicht.</b>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="d-block d-lg-none">
+            &copy; Weiiswurst
+        </footer>
+    </body>
+</html>
